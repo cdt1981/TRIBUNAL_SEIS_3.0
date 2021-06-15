@@ -184,6 +184,16 @@ button{
     margin: 3px;
 }
 
+
+#jumboton, #jumboton_acuerdos{
+
+    width: 98.5% !important;
+    height: 4rem;
+    font-size: 25px;
+    font-weight: bold;
+       
+}
+
 /* **************
 ESTILOS VENTANA MODLAL
 *************** */

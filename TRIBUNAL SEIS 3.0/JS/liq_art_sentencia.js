@@ -481,6 +481,13 @@ $(document).ready(function () {
 
     $("#incFisica, #incPsicol").blur(balthazard);
 
+    // $("#jumboton_acuerdos").click(function(){
+
+    //     $(".mostrarTodo").fadeOut(200, "swing");
+    //     $(".mostrarTodoAcuerdos").fadeIn(200, "swing");
+
+    // });
+
     // $("#quincenal").on("change", function(){
 
     //     if(this.select){
