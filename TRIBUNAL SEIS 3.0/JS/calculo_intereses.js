@@ -23,6 +23,11 @@ function fechaHasta(){
 
 }
 
+sumarSubtotal(){
+
+    var montoInicial = $("#montoInicial").val();
+    
+}
 
     
 $(document).ready(function () {
@@ -46,7 +51,8 @@ $(document).ready(function () {
         $("#tablaSin275>tbody").append($("#template").html());
         $(".filaAgregada:last tr:nth-child(1) td:nth-child(2)").text(lastSubtotal());
         $(".filaAgregada:last tr:nth-child(2) td:nth-child(2)").text(fechaHasta());  
-        
+        sumarSubtotal();
+        sumarTotal();
     });
     
 

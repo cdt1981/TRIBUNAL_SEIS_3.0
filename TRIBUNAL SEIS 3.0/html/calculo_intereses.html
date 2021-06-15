@@ -136,14 +136,14 @@
                             <div class="d-flex container-fluid justify-content-end" ><button class="agregar" id="addTemplate">
                                 <a class="fas fa-plus"></a></button> <button class="quitar" id="remTemplate"><a class="fas fa-minus" ></a></button></div>
                             <div class="d-flex ">
-                                <table class="table table-sm" id="tablaSin275">
-                                    <tbody class="w-100 border">
-                                        <tr>
+                                <table class="table table-borderless table-sm" id="tablaSin275">
+                                    <tbody class="w-100">
+                                        <tr class="filaPrincipal">
                                             <td>
                                                 <table class="tabla w-100">
                                                     <tr>
                                                         <td>Int. T.P.D. sobre:</td>
-                                                        <td><input type="text"></td>
+                                                        <td><input type="text" id="montoInicial"></td>
                                                         <td colspan="3"></td>
                                                     </tr>
                                                     <tr>
@@ -162,17 +162,19 @@
                                                         <td><input type="text" onfocus="(this.type='date')"></td>
                                                         <td>= <input type="text"></td>
                                                     </tr>
-                                                    <tr class="trSubtotal" style="text-align: end;">
-                                                        <td colspan="4" >Subtotal: </td>
-                                                        <td class="tdSubtotal">$ 5.000,00</td>
+                                                    <tr class="trSubtotal text-right">
+                                                        <td colspan="5" >Subtotal: <span class="tdSubtotal"> </span> </td>
+                                                        <!-- <td colspan="4" >Subtotal: </td>
+                                                        <td class="tdSubtotal">$ 5.000,00</td> -->
                                                     </tr>
                                                 </table>
                                             </td>
                                         </tr>
                                     
-                                        <tfoot>
-                                            <tr>
-                                                <td > Total: </td>
+                                        <tfoot >
+                                            <tr >
+                                                <td style="font-weight: bold; font-size: large; text-align:right;">
+                                                     Total: <span id="montoTotal"> $ 5.000,00</span> </td>
                                             </tr>
                                         </tfoot>
                                     </tbody>
@@ -205,8 +207,9 @@
                                                 <td>= <input type="text"></td>
                                             </tr>
                                             <tr class="trSubtotal" style="text-align: end;">
-                                                <td colspan="4" >Subtotal: </td>
-                                                <td class="tdSubtotal"></td>
+                                                <td colspan="5" >Subtotal: <span class="tdSubtotal"> </span> </td>
+                                                <!-- <td colspan="4" >Subtotal: </td>
+                                                <td class="tdSubtotal"></td> -->
                                             </tr>
                                         </table>
                                     </td>
