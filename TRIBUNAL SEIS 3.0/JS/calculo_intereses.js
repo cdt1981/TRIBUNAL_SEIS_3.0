@@ -23,11 +23,11 @@ function fechaHasta(){
 
 }
 
-sumarSubtotal(){
+// sumarSubtotal(){
 
-    var montoInicial = $("#montoInicial").val();
-    
-}
+//     var montoInicial = $("#montoInicial").val();
+
+// }
 
     
 $(document).ready(function () {
