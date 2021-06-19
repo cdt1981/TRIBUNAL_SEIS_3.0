@@ -306,14 +306,43 @@
 
     <!-- modal para ingresar datos del ACUERDO -->
     <div class="modal fade" id="modalAcuerdos" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content modal-xl">
             <div class="modal-header">
-              <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+              <h5 class="modal-title" id="staticBackdropLabel">Información sobre el acuerdo celebrado</h5>
               <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-              ...
+            <div class="modal-body d-flex">
+                <div class="col-6">
+                    <div class="m-4">
+                        Monto del acuerdo: <input  type="text" > <br>
+                    </div>
+                    <div class="m-4">
+                        Fecha de notificación de la demanda: <input  type="date" name="" id=""><br>
+                    </div>
+                    <div class="m-4">
+                        Fecha hasta la cual se calculan los intereses: <input  type="date" name="" id="">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="m-4">
+                        Intereses hasta la notificación de la demanda (770 CCN): <input type="text">
+                    </div>
+                    <div class="m-4">
+                        Nuevo capital: <span> $ 50.0000,00</span>
+                    </div>
+                    <div class="m-4">
+                        Intereses hasta el día de efectuado el cálculo: <input type="text">    
+                    </div>
+                    <div class="m-4">
+                        Total de capital más intereses: <span></span>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="col4"><i class="fas fa-check-circle"></i></div>
+                    <div class="col4"><i class="fas fa-check-circle"></i></div>
+                    <div class="col4"><i class="fas fa-check-circle"></i></div>
+                </div>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
